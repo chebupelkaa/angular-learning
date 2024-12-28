@@ -1,0 +1,20 @@
+
+<form class="input-comment-form" [formGroup]="inputForm">
+   
+    @if(profiles$ |async; as profile){
+        @if(profile.avatarUrl){
+            <img [src]="profile.avatarUrl | imgUrl" alt="" class="avatar-input">
+        } @else {
+            <img src="/assets/imgs/avatar_placeholder.png" alt="" class="avatar-input">
+        }
+    }
+
+    <label class="tt-form-label" >
+        <input type="text" placeholder="Напишите что-нибудь" class="tt-form-input" formControlName="text">
+    </label>
+
+    <a  class="btn input-arrow-btn" >
+        <svg icon="input-arrow" class="input-arrow-btn-icon"></svg>
+    </a>
+
+</form>

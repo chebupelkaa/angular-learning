@@ -1,0 +1,31 @@
+.input-comment-form{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    background: var(--dark-color);
+    border: 1px solid var(--light-color);
+    padding:16px;
+    grid-gap: 16px;
+    align-items: center;
+}
+
+.input-arrow-btn{
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.input-arrow-btn-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.avatar-input{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+}
